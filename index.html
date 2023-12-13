@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  
+  
+</head>
+
+<body>
+  <header id="home">
+    <div class="container_content">
+      <div class="container">
+        <div class="icon flex1">
+          <div class="box">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-twitter"></i>
+          </div>
+          <div class="box">
+            <i class="fa fa-envelope"></i>
+            <label>abcdef@gmail.com</label>
+            <i class=" fa fa-phone"></i>
+            <label>1234567890</label>
+          </div>
+        </div>
+        <hr>
+        <nav>
+          <div class="barnd">
+            <h1>interior Studio</h1>
+          </div>
+
+          <ul id="menu">
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#Testimonials">Testimonials</a></li>
+            <li><a href="#BLOG">BLOG</a></li>
+            <li><a href="#PHOTO">PHOTO</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+          <i id="icon" class="fa fa-bars"></i>
+        </nav>
+
+        <div class="home">
+          <h3>INTERIOR DESIGN COMPANY</h3>
+          <h1>INTERIOR CREATIVE<br> DESIGN</h1>
+
+          <div class="item grid">
+            <div class="item_box flex">
+              <img src="https://th.bing.com/th/id/OIP.DOb51Hz06N1fxw1FK0pjtAHaE8?w=281&h=187&c=7&r=0&o=5&dpr=1.1&pid=1.7" width="80px">
+              <div class="text">
+                <a>Interior Architecture</a>
+                <p>view your design live</p>
+              </div>
+            </div>
+            <div class="item_box flex ">
+              <img src="https://th.bing.com/th/id/OIP.prNoQBFSjLQ4982xb7HwgwHaEo?w=291&h=182&c=7&r=0&o=5&dpr=1.1&pid=1.7" width="80px">
+              <div class="text">
+                <a>Interior Design</a>
+                <p>easier atmosphere setting </p>
+              </div>
+            </div>
+            <div class="item_box flex">
+              <img src="https://th.bing.com/th/id/OIP.s7wXEQtVJcr-zvf1X9_o6AHaGL?w=217&h=182&c=7&r=0&o=5&dpr=1.1&pid=1.7" width="80px">
+              <div class="text">
+                <a>Furniture</a>
+                <p>connect collabrate create </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<script>
+  let bar = document.getElementById("icon");
+  let menu = document.getElementById("menu");
+
+  bar.addEventListener("click", function() {
+    if (bar.className === "fa fa-bars") {
+      bar.className = "fa fa-times";
+      menu.style.right = 0;
+    } else {
+      bar.className = "fa fa-bars";
+      menu.style.right = "-1000px";
+    }
+  })
+  
+</script>
+
+  <section class="Design">
+    <div class="container grid">
+      <div class="box flex">
+        <i class="fa fa-qrcode"></i>
+        <div class="text">
+          <h4>Creative Solutions</h4>
+          <p> industry leading design and visualization solution.</p>
+        </div>
+      </div>
+      <div class="box flex">
+        <i class="fa fa-wpexplorer"></i>
+        <div class="text">
+          <h4>Design Interior</h4>
+          <p> industry leading design and visualization solution.</p>
+        </div>
+      </div>
+      <div class="box flex">
+        <i class="fa fa-lightbulb-o"></i>
+        <div class="text">
+          <h4>Intuitive Design</h4>
+          <p> industry leading design and visualization solution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="ABOUT">
+    <div class="container flex1">
+      <div class="left">
+        <div class="img">
+          <img src="https://th.bing.com/th/id/OIP.lrzQ-hMB8yyhweZSJ9OzAgHaEu?w=298&h=190&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="">
+        </div>
+      </div>
+
+
+      <div class="right">
+        <h5>WHY US</h5>
+        <h2>Why Us</h2>
+        <button class="accordion  "> <label>1. What Shold i do if my interior broken?</label> </button>
+        <div class="panel active">
+          <p>we're committed to the excellence of our designs. If your interior encounters any unexpected issues, we take full responsibility and promise a smooth replacement process.
+
+          </p>
+        </div>
+
+        <button class="accordion">2. what is your location</button>
+        <div class="panel">
+          <p>mancherial 504207</p>
+
+        <button class="accordion">3. robus building</button>
+        <div class="panel">
+          <p>We own up to any damage related to our interior designs, prioritizing your satisfaction.</p>
+        </div>
+
+        <button class="accordion"> 4. what is your main services?</button>
+        <div class="panel">
+          <p>Space Planning: Efficient layout and organization.
+
+            Concept Development: Crafting a design based on preferences.
+            
+            Color and Material Selection: Advising on finishes and color palettes.
+            
+            Furniture Selection and Layout: Choosing and arranging furnishings.
+            
+            Lighting Design: Planning lighting for ambiance and functionality.
+            
+            Custom Furnishings: Designing or selecting unique pieces..</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+
+  <section class="Testimonials" id="Testimonials">
+    <div class="container">
+      <h5>HAPPY CLIENTS </h5>
+      <h2>Testimonials</h2>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item  ">
+          <div class="box flex">
+            <div class="img">
+              <img src="https://th.bing.com/th?id=OPA.4iPCxZx37z%2f3Gw474C474&w=200&h=220&rs=1&o=5&dpr=1.1&pid=21.1" alt=""><br>
+            </div>
+            <div class="text">
+              <h3>selena</h3>
+              <h5>OWNER OF BUILDING CO.</h5><br>
+            </div>
+          </div>
+          <p> interior decoration party thrives on being social.</p>
+        </div>
+        <div class="item  ">
+          <div class="box flex">
+            <div class="img">
+                <img src="https://th.bing.com/th/id/OIP.2_tANLxB8oa6yZvczLs0SAHaEo?w=286&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7">
+            </div>
+            <div class="text">
+              <h3>villiams</h3>
+              <h5>OWNER OF BUILDING CO.</h5><br>
+            </div>
+          </div>
+          <p> architecture is inhabited scupture.</p>
+        </div>
+        <div class="item  ">
+          <div class="box flex">
+            <div class="img">
+              <img src="https://th.bing.com/th/id/OIP.R4NybfddBcA2siPSSa-oPwHaE8?w=262&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt=""><br>
+            </div>
+            <div class="text">
+              <h3>roman</h3>
+              <h5>we shape our homes and then our homes shape us</h5><br>
+            </div>
+          </div>
+          <p> design is intelligence made visible</p>
+        </div>
+        <div class="item  ">
+          <div class="box flex">
+            <div class="img">
+              <img src="https://th.bing.com/th/id/OIP.Vl_e9MHPU9zd4L0zoanT3wHaEo?w=254&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt=""><br>
+            </div>
+            <div class="text">
+              <h3>john</h3>
+              <h5>OWNER OF BUILDING CO.</h5><br>
+            </div>
+          </div>
+          <p> design is intelligence made visible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        800: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+  <section class="about photo" id="PHOTO">
+    <div class="container flex1">
+      <div class="left">
+        <div class="img">
+          <img src="https://th.bing.com/th/id/OIP.vWknKjOY3WoBk36z5JTq9QHaFj?w=268&h=201&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="">
+        </div>
+      </div>
+
+      <div class="right grid1">
+        <div class="box">
+          <img src="https://th.bing.com/th/id/OIP.HsOzOMyDLkJXNYPYREOV_AHaFj?w=283&h=205&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="">
+          <h3>House Decor</h3>
+        </div>
+        <div class="box">
+          <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-82ca288/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Bedroom-inspiration-on-one-of-the-top-interior-design-websites.jpg" alt="">
+          <h3>Seat Decor</h3>
+        </div>
+        <div class="box">
+          <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-82ca288/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Feature-interior-on-one-of-the-best-interior-decorating-websites-Design-Milk.jpg" alt="">
+          <h3>Intuitive Idea</h3>
+        </div>
+        <div class="box">
+          <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-82ca288/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Interior-design-website-The-Spruce.jpg" alt="">
+          <h3>Decoration</h3>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="blog" id="BLOG">
+    <div class="container  ">
+      <h5>NEWS & UPDATE</h5>
+      <h2>Our Blog Posts</h2> <br><br>
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-82ca288/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Interior-decorating-websites-inspiration-Elle-Decor.jpg" alt="">
+          </div>
+          <div class="text">
+            <label>23, January 2021</label><br>
+            <p>Architecture is ready to take the world to the next level</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-82ca288/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Bold-maximalist-home-on-one-of-the-top-interior-design-websites-Home-Designing.jpg" alt="">
+          </div>
+          <div class="text">
+            <label>23, January 2021</label><br>
+            <p>Architecture is ready to take the world to the next level</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-82ca288/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/One-of-the-best-interior-design-sites-inspiration-for-a-contemporary-home-and-minimal-decor.jpg" alt="">
+          </div>
+          <div class="text">
+            <label>23, January 2021</label><br>
+            <p>Architecture is ready to take the world to the next level</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#">View All Posts</a>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="content grid">
+        <div class="item ">
+          <h3>Navigation</h3>
+          <div class="item_box flex1 ">
+            <ul>
+              <li>Home</li>
+              <li>Servies</li>
+              <li>News</li>
+              <li>Team</li>
+            </ul>
+            <ul>
+              <li>Abou Us</li>
+              <li>Privacy Policy</li>
+              <li>Contact</li>
+              <li>Membership</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="item">
+          <h3>Recent News</h3>
+          <div class="box flex">
+            <div class="img">
+              <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-82ca288/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Inspiration-by-one-of-the-best-interior-design-websites.jpg" alt="">
+            </div>
+            <div class="text">
+              <label>SEP 16, 2021</label>
+              <p>interior decorators</p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-82ca288/www.decorilla.com/online-decorating/wp-content/uploads/2021/06/Kitchen-design-by-one-of-the-best-Interior-Design-websites.jpg" alt="">
+            </div>
+            <div class="text">
+              <label>SEP 16, 2021</label>
+              <p>interior decorators</p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-82ca288/www.decorilla.com/online-decorating/wp-content/uploads/2023/08/Best-interior-design-websites-and-blogs.jpg" alt="">
+            </div>
+            <div class="text">
+              <label>SEP 16, 2021</label>
+              <p>interior decorators</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h3>Subscribe Newsletter</h3>
+          <p>.</p>
+          <input type="text" placeholder="Enter Email">
+          <label class="label">Send</label>
+          <div class="icon">
+            <h3>Follow Us</h3>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+            <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <p class="legal">Copyright by navitha <i class="fa fa-heart"></i> with by <label>interior design</label> </p>
+    </div>
+  </footer>
+</body>
+
+</html>
